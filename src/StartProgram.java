@@ -100,13 +100,13 @@ public class StartProgram {
 
 	public static void runMenu() {
 		boolean goAgain = true;
-		System.out.println("--- Welcome to our awesome shopping list! ---");
+		System.out.println("--- Welcome to the Hockey Team Database! ---");
 		while (goAgain) {
-			System.out.println("*  Select an item:");
-			System.out.println("*  1 -- Add an item");
-			System.out.println("*  2 -- Edit an item");
-			System.out.println("*  3 -- Delete an item");
-			System.out.println("*  4 -- View the list");
+			System.out.println("*  Select an option:");
+			System.out.println("*  1 -- Add a Team");
+			System.out.println("*  2 -- Edit a Team");
+			System.out.println("*  3 -- Delete a Team");
+			System.out.println("*  4 -- View the team list");
 			System.out.println("*  5 -- Exit the team list");
 			System.out.print("*  Your selection: ");
 			int selection = in.nextInt();
