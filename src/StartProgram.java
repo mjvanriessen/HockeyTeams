@@ -22,7 +22,7 @@ public class StartProgram {
 		System.out.print("Enter the team's city: ");
 		String teamCity = in.nextLine();
 		System.out.println("Enter the team's wins: ");
-		int teamWins = in.nextInt();
+		String teamWins = in.nextLine();
 		HockeyTeam toAdd = new HockeyTeam(teamName, teamCity, teamWins);
 		hth.insertTeam(toAdd);
 	}
@@ -33,7 +33,7 @@ public class StartProgram {
 		System.out.print("Enter the team city to delete: ");
 		String teamCity = in.nextLine();
 		System.out.println("Enter the team wins amount to delete: ");
-		int teamWins = in.nextInt();
+		String teamWins = in.nextLine();
 		HockeyTeam toDelete = new HockeyTeam(teamName, teamCity, teamWins);
 		hth.deleteTeam(toDelete);
 	}
@@ -81,7 +81,7 @@ public class StartProgram {
 				toEdit.setTeamCity(newTeamCity);
 			} else if (update == 3) {
 				System.out.println("New team win count: ");
-				int newTeamWins = in.nextInt();
+				String newTeamWins = in.nextLine();
 				toEdit.setTeamWins(newTeamWins);
 			}
 

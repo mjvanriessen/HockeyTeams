@@ -23,13 +23,13 @@ public class HockeyTeam {
 	@Column(name="CITY")
 	private String teamCity;
 	@Column(name="WINS")
-	private int teamWins;
+	private String teamWins;
 	
 	public HockeyTeam() {
 		super();
 	}
 	
-	public HockeyTeam(String teamName, String teamCity, int teamWins) {
+	public HockeyTeam(String teamName, String teamCity, String teamWins) {
 		super();
 		this.teamName = teamName;
 		this.teamCity = teamCity;
@@ -60,11 +60,11 @@ public class HockeyTeam {
 		this.teamCity = teamCity;
 	}
 
-	public int getTeamWins() {
+	public String getTeamWins() {
 		return teamWins;
 	}
 
-	public void setTeamWins(int teamWins) {
+	public void setTeamWins(String teamWins) {
 		this.teamWins = teamWins;
 	}
 	

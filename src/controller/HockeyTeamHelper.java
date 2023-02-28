@@ -16,7 +16,7 @@ import model.HockeyTeam;
 
 public class HockeyTeamHelper {
 	
-	static EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("HockeyTeams");
+	static EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("WebHockeyTeams");
 	
 	public void insertTeam(HockeyTeam ht) {
 		EntityManager em = emfactory.createEntityManager();
